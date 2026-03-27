@@ -23,8 +23,8 @@ To implement a Support Vector Machine (SVM) model to classify food items and opt
 ```
 /*
 Program to implement SVM for food classification for diabetic patients.
-Developed by: R VENKATRAMANI
-RegisterNumber:  212225240182
+Developed by: ROSHAN V
+RegisterNumber:  212225240124
 
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -61,8 +61,8 @@ grid_search = GridSearchCV(svm, param_grid, cv=5, scoring='accuracy')
 grid_search.fit(X_train, y_train)
 best_model = grid_search.best_estimator_
 
-print("Name: R VENKATRAMANI")
-print("Register Number: 212225240182")
+print("Name: ROSHAN V")
+print("Register Number: 212225240124")
 print("Best Parameters:", grid_search.best_params_)
 y_pred = best_model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
